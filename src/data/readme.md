@@ -1,0 +1,1 @@
+common functions run on data returned from postgres db

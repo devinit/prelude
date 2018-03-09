@@ -1,0 +1,71 @@
+{
+  "name": "@devinit/prelude",
+  "version": "1.0.0",
+  "description": "simple graphql framework @devinit",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "jest",
+    "coverage": "NODE_ENV=test jest && codecov",
+    "patch": "release-it -i patch -n",
+    "feature": "release-it -i minor -n",
+    "breaking": "release-it -i major -n",
+    "build": "tsc"
+  },
+  "bin": {
+    "gqlToTs": "cli.js"
+  },
+  "author": "epicallan.al@gmail.com",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devinit/graphql-next.git"
+  },
+  "dependencies": {
+    "apollo-fetch": "0.7.0",
+    "fs-extra": "5.0.0",
+    "pg-promise": "8.1.1",
+    "prettier": "1.11.1",
+    "ramda": "0.25.0",
+    "shortid": "2.2.8"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "5.0.1",
+    "@types/jest": "22.2.0",
+    "@types/node": "9.4.6",
+    "@types/ramda": "0.25.19",
+    "@types/shortid": "0.0.29",
+    "concurrently": "3.5.1",
+    "git-pre-hooks": "1.2.0",
+    "jest": "22.4.2",
+    "jest-cli": "22.4.2",
+    "pretty-format": "22.4.0",
+    "release-it": "7.2.1",
+    "ts-jest": "22.4.1",
+    "tslint": "5.9.1",
+    "typescript": "2.7.2"
+  },
+  "git-pre-hooks": {
+    "pre-push": [
+      "npm run lint",
+      "npm run build"
+    ]
+  },
+  "jest": {
+    "transform": {
+      ".(ts)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "testEnvironment": "node",
+    "testRegex": ".*\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
+  }
+}

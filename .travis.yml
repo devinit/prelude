@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- v9.3.0
+install:
+- npm install -g codecov
+- yarn
+script:
+- npm run build
+- npm run lint
+- npm run coverage
+cache:
+- node_modules
+sudo: false
