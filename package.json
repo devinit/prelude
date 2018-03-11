@@ -1,6 +1,6 @@
 {
   "name": "@devinit/prelude",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "simple graphql framework @devinit",
   "main": "lib/index.js",
   "scripts": {
