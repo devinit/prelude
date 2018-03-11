@@ -102,6 +102,3 @@ export const normalizeKeyNames = (obj: {}) => {
         return {...acc, [key]: obj[key]}; // return to default
     }, {});
 };
-
-export const capitalize = (val: string) =>
-    `${val[0].toUpperCase()}${R.drop(1, val)}`;
