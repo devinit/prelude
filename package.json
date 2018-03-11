@@ -24,7 +24,6 @@
   "dependencies": {
     "apollo-fetch": "0.7.0",
     "fs-extra": "5.0.0",
-    "pg-promise": "8.1.1",
     "prettier": "1.11.1",
     "ramda": "0.25.0",
     "shortid": "2.2.8"
@@ -33,7 +32,7 @@
     "@types/fs-extra": "5.0.1",
     "@types/jest": "22.2.0",
     "@types/node": "9.4.7",
-    "@types/ramda": "0.25.19",
+    "@types/ramda": "0.25.20",
     "@types/shortid": "0.0.29",
     "concurrently": "3.5.1",
     "git-pre-hooks": "1.2.0",
