@@ -1,7 +1,7 @@
 import * as R from 'ramda';
 import * as shortid from 'shortid';
 import {IDatabase} from 'pg-promise';
-import {formatNumbers} from '../numbers';
+import {approximate} from '../numbers';
 
 export interface IExtensions {
     manyCacheable: (query: string, values?: object | string) => Promise<any[]>;
@@ -59,7 +59,7 @@ export const valuesIntoPercents = <T extends {value: number}>(data: T[], precisi
     const sum = getTotal(data);
     return data.map((obj: T) => {
         const newValue  = (obj.value / sum) * 100;
-        const value = precision ? Number(formatNumbers(newValue, precision)) : Math.round(newValue);
+        const value = precision ? Number(approximate(newValue, precision)) : Math.round(newValue);
         return Object.assign(obj, {value});
     });
 };
