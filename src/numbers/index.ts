@@ -32,7 +32,7 @@ const removeTrailingZero = (value: string): string => {
 export const roundNum = (num, length): string =>
     (Math.round(num * (10 ** length)) / (10 ** length)).toFixed(length);
 
-export const formatNumbers =
+export const approximate =
     (value: number | string | undefined | null,
      precision: number = 1,
      shouldrRemoveTrailingZero: boolean = false): string => {
