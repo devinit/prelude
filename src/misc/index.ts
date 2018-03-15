@@ -1,3 +1,5 @@
+import fetch from 'node-fetch';
+
 export interface IEmail {
     message: string;
     token: string;
@@ -24,7 +26,7 @@ export const getShortURL = async (longUrl: string): Promise<string> => {
     const json = await response.json();
     return json.data.url;
 };
-export const sendEmail = (payload: IEmail) => {
+export const sendEmail = (payload: IEmail): Promise<any> => {
     return fetch('http://data.devinit.org:9999/send', {
     method: 'POST',
     headers: {

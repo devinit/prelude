@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`misc tests should return short url of a long url 1`] = `"http://bit.ly/2wamIhE"`;
