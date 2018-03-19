@@ -28,6 +28,11 @@ const removeTrailingZero = (value: string): string => {
     return  Math.round(val) === val ? val.toString() : value;
 };
 
+export const THOUSAND = 1e3;
+export const MILLION = 1e6;
+export const BILLION = 1e9;
+export const TRILLION = 1e12;
+
 // (10 ** length) == Math.pow(10, length);
 export const roundNum = (num, length): string =>
     (Math.round(num * (10 ** length)) / (10 ** length)).toFixed(length);
