@@ -9,7 +9,7 @@ describe('misc tests', () => {
       },
       20000,
     );
-    it('should run without errors while sending email', async () => {
+    it.skip('should run without errors while sending email', async () => {
       const response = await sendEmail({
         message: 'test',
         token: 'e2DQks99XapU6w2s1',
