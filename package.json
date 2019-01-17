@@ -38,7 +38,7 @@
     "@types/ramda": "0.25.20",
     "@types/shortid": "0.0.29",
     "concurrently": "3.5.1",
-    "git-pre-hooks": "1.2.0",
+    "git-pre-hooks": "1.2.1",
     "jest": "22.4.2",
     "jest-cli": "22.4.2",
     "pretty-format": "22.4.0",
