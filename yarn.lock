@@ -2064,9 +2064,9 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-git-pre-hooks@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/git-pre-hooks/-/git-pre-hooks-1.2.0.tgz#7296704cd74423f08ab82280129df4f173944a4f"
+git-pre-hooks@1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/git-pre-hooks/-/git-pre-hooks-1.2.1.tgz#5b301c9a5774a43c6655cd2c1212b11bdddff7dc"
 
 git-raw-commits@^1.3.4:
   version "1.3.4"
