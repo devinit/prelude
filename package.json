@@ -26,7 +26,7 @@
     "apollo-fetch": "0.7.0",
     "fetch": "^1.1.0",
     "fs-extra": "5.0.0",
-    "pg-promise": "^8.2.1",
+    "pg-promise": "^10.0.0",
     "prettier": "1.11.1",
     "ramda": "0.25.0",
     "shortid": "2.2.8"
