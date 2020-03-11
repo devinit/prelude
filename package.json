@@ -25,14 +25,14 @@
     "@types/node-fetch": "^1.6.7",
     "apollo-fetch": "0.7.0",
     "fetch": "^1.1.0",
-    "fs-extra": "5.0.0",
+    "fs-extra": "8.1.0",
     "pg-promise": "^8.2.1",
     "prettier": "1.11.1",
     "ramda": "0.25.0",
     "shortid": "2.2.8"
   },
   "devDependencies": {
-    "@types/fs-extra": "5.0.1",
+    "@types/fs-extra": "8.1.0",
     "@types/jest": "22.2.0",
     "@types/node": "9.4.7",
     "@types/ramda": "0.25.20",
